@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="theme.css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> 
+</head>
+<body>
+
+	<div id="game">
+	<div id="menu">
+		<div id="title">Simon</div>	
+		<div id="count">0</div>
+		<div id="start" class="button" onclick="simon.start();">Start</div>
+		<div id="strict" class="button" onclick="simon.toggleStrict();">Strict</div>
+	</div>
+	<div id="tl" onclick="simon.canClick('tl');"></div>
+	<div id="tr" onclick="simon.canClick('tr');"></div>
+	<div id="bl" onclick="simon.canClick('bl');"></div>
+	<div id="br" onclick="simon.canClick('br');"></div>
+
+	</div>
+
+	<script src="simon.js"></script>
+</body>
+<!html>
